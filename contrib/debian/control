@@ -1,0 +1,68 @@
+Source: addmore
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@dash.org>
+Uploaders: Holger Schinzel <holger@dash.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.35),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.35),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.35),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.35),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.35),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.35),
+ qt4-qmake,
+ libqt4-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python
+Standards-Version: 3.9.2
+Homepage: https://www.addmore.org/
+Vcs-Git: git://github.com/addmore/addmore.git
+Vcs-Browser: https://github.com/addmore/addmore
+
+Package: addmored
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Addmore is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Addmore uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Addmore Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, addmored, and the CLI tool
+ addmore-cli to interact with the daemon.
+
+Package: addmore-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Addmore is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Addmore uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Addmore Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides Addmore-Qt, a GUI for Addmore based on Qt.
+
+Package: addmore-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ Addmore is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Addmore uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Addmore Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides addmore-tx, a command-line transaction creation
+ tool which can be used without a addmore daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

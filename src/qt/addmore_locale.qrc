@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/addmore_bg.qm</file>
+        <file alias="de">locale/addmore_de.qm</file>
+        <file alias="en">locale/addmore_en.qm</file>
+        <file alias="es">locale/addmore_es.qm</file>
+        <file alias="fi">locale/addmore_fi.qm</file>
+        <file alias="fr">locale/addmore_fr.qm</file>
+        <file alias="it">locale/addmore_it.qm</file>
+        <file alias="ja">locale/addmore_ja.qm</file>
+        <file alias="pl">locale/addmore_pl.qm</file>
+        <file alias="pt">locale/addmore_pt.qm</file>
+        <file alias="ru">locale/addmore_ru.qm</file>
+        <file alias="sk">locale/addmore_sk.qm</file>
+        <file alias="sv">locale/addmore_sv.qm</file>
+        <file alias="vi">locale/addmore_vi.qm</file>
+        <file alias="zh_CN">locale/addmore_zh_CN.qm</file>
+        <file alias="zh_TW">locale/addmore_zh_TW.qm</file>
+    </qresource>
+</RCC>

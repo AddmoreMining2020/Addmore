@@ -1,0 +1,6 @@
+usr/local/bin/addmore-qt usr/bin
+share/pixmaps/addmore32.xpm usr/share/pixmaps
+share/pixmaps/addmore16.xpm usr/share/pixmaps
+share/pixmaps/addmore128.png usr/share/pixmaps
+debian/addmore-qt.desktop usr/share/applications
+debian/addmore-qt.protocol usr/share/kde4/services/

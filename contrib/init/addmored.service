@@ -1,0 +1,22 @@
+[Unit]
+Description=Addmore's distributed currency daemon
+After=network.target
+
+[Service]
+User=addmore
+Group=addmore
+
+Type=forking
+PIDFile=/var/lib/addmored/addmored.pid
+ExecStart=/usr/bin/addmored -daemon -pid=/var/lib/addmored/addmored.pid \
+-conf=/etc/addmore/addmore.conf -datadir=/var/lib/addmored -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

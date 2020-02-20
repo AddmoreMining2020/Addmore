@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Addmore
+Comment=Addmore P2P Cryptocurrency
+Comment[fr]=Addmore, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Addmore, eşten eşe kriptografik sanal para birimi
+Exec=addmore-qt %u
+Terminal=false
+Type=Application
+Icon=addmore128
+MimeType=x-scheme-handler/addmore;
+Categories=Office;Finance;
